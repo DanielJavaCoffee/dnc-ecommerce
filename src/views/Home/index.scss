@@ -1,0 +1,12 @@
+
+.Home {
+
+    margin: 0px;
+    padding: 0px;
+
+    &__products{
+        margin-left: 20%;
+        display: grid;
+        grid-template-columns: 25% 25% 25%;
+    }
+}

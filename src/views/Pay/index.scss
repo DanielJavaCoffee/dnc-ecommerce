@@ -1,0 +1,138 @@
+@use '../../sass/variables' as *;
+
+.pay-container {
+    margin-top: 100px;
+    justify-content: center;
+    display: grid;
+    grid-template-columns: 40% 40%;
+    gap: 100px;
+
+    &__flex {
+        display: flex;
+        flex-direction: column;
+
+        label {
+            margin-top: 10px;
+            font-family: Raleway, sans-serif;
+            font-size: 30px;
+            font-weight: 400;
+            line-height: 35.22px;
+            text-align: left;
+        }
+
+        input {
+            width: 524px;
+            height: 52px;
+            margin: 10px 0;
+            padding: 11px 13px;
+            gap: 8px;
+            border-radius: 10px;
+            border: 2px solid black;
+            opacity: 1;
+        }
+
+        button {
+            margin-top: 60px;
+            padding: 10px;
+            background-color: $cor-secundaria;
+            border: none;
+            border-radius: 10px;
+            height: 50px;
+    
+            a {
+                text-decoration: none;
+                color: #FFFFFF;
+                font-size: 20px;
+            }
+        }
+
+        button:hover{
+            background-color: #010B28;
+            transform: translateY(-7px);
+            transition-duration: 0.5s;
+        }
+    }
+
+    &__radio {
+        font-family: Raleway, sans-serif;
+        font-size: 46px;
+        font-weight: 300;
+        line-height: 30.52px;
+
+        div {
+            display: flex;
+            align-items: center;
+            margin-top: 10px;
+
+            input[type="radio"] {
+                appearance: none;
+                width: 20px;
+                height: 20px;
+                border: 2px solid #000;
+                border-radius: 4px; // Torna o botão quadrado
+                margin-right: 10px;
+                cursor: pointer;
+                position: relative;
+            }
+
+            input[type="radio"]:checked {
+                background-color: #000;
+            }
+
+            input[type="radio"]:checked::after {
+                content: '';
+                position: absolute;
+                top: 2px;
+                left: 2px;
+                width: 12px;
+                height: 12px;
+                background: white;
+                border-radius: 2px; // Mantém o quadrado interno
+            }
+
+            label {
+                cursor: pointer;
+                font-size: 18px; // Ajuste conforme necessário
+                font-weight: 400;
+            }
+        }
+    }
+
+    &__right{
+        height: 300px;
+        display: flex;
+        background-color: #FFFFFF;
+        padding: 20px;
+        box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.1);
+
+        h2 {
+            font-family: Raleway;
+            font-size: 30px;
+            font-weight: 600;
+            line-height: 35.22px;
+            text-align: left;
+        }
+
+        p {
+            font-family: Raleway;
+            font-size: 25px;
+            font-weight: 400;
+            line-height: 29.35px;
+            text-align: left;
+
+            p:first-child {
+                border-bottom: 1px solid #e24444;
+            }
+        }
+
+        span {
+            font-family: Montserrat;
+            font-size: 30px;
+            font-weight: 600;
+            line-height: 20px;
+            text-align: center;
+            color: #000000;
+        }
+    }
+}
+
